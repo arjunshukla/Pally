@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:padding="10dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/friends_behaviour_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/friends_photo_container"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0.25" >
+
+            <com.pally.app.customview.RoundedImageView
+                android:id="@+id/friends_picture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profile_thumb" />
+
+            <com.pally.app.customview.RoundedImageView
+                android:id="@+id/friends_country_picture"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/profile_thumb" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/friend_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Emma Watson"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/friend_age_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="26, German"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/friends_status_action"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.30"
+            android:text="Friends" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/friends_item_seperator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/friends_behaviour_container"
+        android:background="@color/app_background_grey"
+        android:padding="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@android:color/white"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/feeds_header" />
+
+    <ImageView
+        android:id="@+id/activity_shared_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feeds_header_container"
+        android:background="@drawable/bike" />
+
+    <TextView
+        android:id="@+id/activity_shared_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_shared_image"
+        android:padding="10dp"
+        android:text="Arrying in N.Y now! So Excided !"
+        android:textSize="20sp" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_shared_text"
+        layout="@layout/feeds_fotter" />
+
+</RelativeLayout>
