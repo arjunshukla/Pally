@@ -54,6 +54,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _tv_poststatus.text = @"CREATE POST...";
+    _tv_poststatus.textColor = [UIColor lightGrayColor];
     
     self.title = @"Activity";
 
@@ -67,13 +69,9 @@
     [button setImage:[UIImage imageNamed:@"slider_icon.png"] forState:UIControlStateNormal];
     [button addTarget:(DEMONavigationController *)self.navigationController action:@selector(showMenu) forControlEvents:UIControlEventTouchUpInside];
     
-    
-    
+
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    
-   
-
 
     self.imageNames=[[NSMutableArray alloc]init];
     
@@ -134,6 +132,25 @@ int temppostid;
 - (void)textViewDidBeginEditing:(UITextView *)textView
 {
      [self.tolbr_bottom setFrame:CGRectMake(_tolbr_bottom.frame.origin.x,self.view.frame.size.height-300, _tolbr_bottom.frame.size.width, _tolbr_bottom.frame.size.height)];
+
+    if([_tv_poststatus isEqual:textView]){
+    if ([textView.text isEqualToString:@"CREATE POST..."]) {
+        textView.text = @"";
+        textView.textColor = [UIColor blackColor];
+    }
+    [textView becomeFirstResponder];
+    }
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    if([_tv_poststatus isEqual:textView]){
+    if ([textView.text isEqualToString:@""]) {
+        textView.text = @"CREATE POST...";
+        textView.textColor = [UIColor lightGrayColor];
+    }
+    [textView resignFirstResponder];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -287,7 +304,7 @@ homeTableViewCell *cell;
         
             if(textSize.height>55.0f)
             {
-                [cell.asyncPostImageView setFrame:CGRectMake(11, textSize.height+15.0f, tableView.frame.size.width-22, 220)];
+                [cell.asyncPostImageView setFrame:CGRectMake(-1, textSize.height+15.0f, tableView.frame.size.width, 220)];
                 [cell.noOfLikes setFrame:CGRectMake(20, textSize.height+245.0f+65.0f, 25, 14)];
                 [cell.likeButton setFrame:CGRectMake(47, textSize.height+240.0f+65.0f,26, 25)];
                 [cell.commentButton setFrame:CGRectMake(tableView.frame.size.width-70, textSize.height+240.0f+65.0f, 26,25)];
@@ -295,8 +312,9 @@ homeTableViewCell *cell;
                 [cell.descLabel setFrame:CGRectMake(10, textSize.height+145.0f+155.0f, tableView.frame.size.width-20, 1)];
                 [cell.lblPost setFrame:CGRectMake(20, textSize.height+245.0f, textSize.width, textSize.height)];
             }
-            else{
-                [cell.asyncPostImageView setFrame:CGRectMake(11, 60, tableView.frame.size.width-22, 220)];
+            else
+            {
+                [cell.asyncPostImageView setFrame:CGRectMake(-1, 60, tableView.frame.size.width, 220)];
                 [cell.noOfLikes setFrame:CGRectMake(20, 283.0f+65.0f, 25, 14)];
                 [cell.likeButton setFrame:CGRectMake(47, 278.0f+65.0f,26, 25)];
                 [cell.commentButton setFrame:CGRectMake(tableView.frame.size.width-70,278.0f+65.0f, 26,25)];
@@ -311,7 +329,7 @@ homeTableViewCell *cell;
         
         
         
-        
+        cell.asyncPostImageView.contentMode = UIViewContentModeScaleAspectFit;
         
         [cell.asyncPostImageView setHidden:FALSE];
         
@@ -367,13 +385,6 @@ homeTableViewCell *cell;
     //[cell.lblPost setAttributedText:string];
 
     [cell.lblPost setText:textstring];
-    
-    
-    
-    
-    
-    
-    
    
     [cell.noOfLikes setText:[[self.imageNames objectAtIndex:indexPath.section]objectForKey:@"like_count"]];
     
@@ -392,28 +403,12 @@ homeTableViewCell *cell;
     }
     
     
-    
-  
-    
-    
     [cell.asyncPostImageView setTag:[[[self.imageNames objectAtIndex:indexPath.section]objectForKey:@"post_id"] intValue]];
    
     UITapGestureRecognizer *tppostimg=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(asyncPostImageView_action:)];
     [tppostimg setNumberOfTapsRequired:1];
      [cell.asyncPostImageView setUserInteractionEnabled:TRUE];
     [cell.asyncPostImageView addGestureRecognizer:tppostimg];
-    
-
-
-    
-    
- 
-    
-    
-    
-    
-    
-    
     
     
     NSString *imageurlprof=[NSString stringWithFormat:profimageURL,[[self.imageNames objectAtIndex:indexPath.section]objectForKey:@"userimage"]];
@@ -427,21 +422,6 @@ homeTableViewCell *cell;
     UITapGestureRecognizer *letterTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(asynProfile_action:)];
     letterTapRecognizer.numberOfTapsRequired = 1;
     [cell.asyncProfileImageView addGestureRecognizer:letterTapRecognizer];
-    
-
-    
-   
-    
-    
-    
-    
-   
-
-    
-    
-    
-    
-    
     
     return cell;
 }
@@ -583,7 +563,7 @@ homeTableViewCell *cell;
 - (IBAction)btn_sharePost:(id)sender {
     
    
-    if(_tv_poststatus.text.length==0 && imageData.length==0)
+    if((_tv_poststatus.text.length==0 && imageData.length==0) || [_tv_poststatus.text isEqualToString:@"CREATE POST..."])
     {
         [self alertshow :1 :@"Sorry!" :@"Empty post cannot be uploaded"];
   
@@ -596,7 +576,9 @@ homeTableViewCell *cell;
     {
         pageno=1;
     [_tv_poststatus resignFirstResponder];
-    [_tv_poststatus setText:@""];
+    [_tv_poststatus setText:@"CREATE POST..."];
+    _tv_poststatus.textColor = [UIColor lightGrayColor];
+        
      [_img_toPost setImage:nil];
     }
     
@@ -632,7 +614,7 @@ homeTableViewCell *cell;
     
     if(buttonIndex==2)
     {
-        
+        [_img_textviwtop setImage:[UIImage imageNamed:@"zig_zag_line.png"]];
     }
     else
     {

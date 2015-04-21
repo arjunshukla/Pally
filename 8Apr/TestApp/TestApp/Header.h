@@ -15,9 +15,6 @@
 #define CountryImageUrl @"http://108.179.196.157/~pallyapp/dev/ws/flags/48/%@"
 
 
-
-
-
 #define SignupURL  @"http://108.179.196.157/~pallyapp/dev/ws/add_user.php"
 #define SignIN     @"http://108.179.196.157/~pallyapp/dev/ws/login.php"
 #define SignINFacebookURL     @"http://108.179.196.157/~pallyapp/dev/ws/facebook_login.php"

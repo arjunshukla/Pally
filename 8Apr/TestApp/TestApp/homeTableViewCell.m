@@ -50,10 +50,10 @@
       //  NSLog(@"%f",self.frame.size.width);
     if([[UIScreen mainScreen] bounds].size.width==320)
     {
-       _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(11,110,self.frame.size.width-22,220)];
+       _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(-1,110,self.frame.size.width-22,220)];
     }
     else{
-      _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(11,110,self.frame.size.width-22,220)];
+      _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(-1,110,self.frame.size.width-22,220)];
     }
         [_asyncPostImageView setContentMode:UIViewContentModeScaleAspectFit];
     _asyncPostImageView.clipsToBounds=YES;
@@ -74,17 +74,6 @@
    // _EditButton.backgroundColor=[UIColor redColor];
     [_EditButton setBackgroundImage:[UIImage imageNamed:@"more_optipon_btn.png"] forState:UIControlStateNormal];
    // [baseImgView addSubview:_EditButton];
-    
-    
-    
-    
-    
-
-
-    
-  
-
-    
     
     _asyncProfileImageView = [[UIImageView alloc] initWithFrame: CGRectMake(11,6,45,45)];
     

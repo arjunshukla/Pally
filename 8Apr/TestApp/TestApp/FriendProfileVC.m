@@ -512,7 +512,8 @@ homeTableViewCell *cell;
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     
-    return [[[respodict objectForKey:@"res" ] objectForKey:@"userPhotoPostDetail" ]count ];
+    return [[[respodict objectForKey:@"res" ] objectForKey:@"userPhotoPostDetail" ]count];
+//    return 5;
     
 }
 
@@ -555,7 +556,7 @@ homeTableViewCell *cell;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake([[UIScreen mainScreen]bounds].size.width/3-11, [[UIScreen mainScreen]bounds].size.width/3-11);
+    return CGSizeMake([[UIScreen mainScreen]bounds].size.width/*/3-11*/, [[UIScreen mainScreen]bounds].size.width/*3-11*/);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
