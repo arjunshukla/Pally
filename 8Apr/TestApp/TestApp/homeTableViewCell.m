@@ -50,10 +50,10 @@
       //  NSLog(@"%f",self.frame.size.width);
     if([[UIScreen mainScreen] bounds].size.width==320)
     {
-       _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(-1,110,self.frame.size.width-22,220)];
+       _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(self.frame.origin.x,110,self.frame.size.width,220)];
     }
     else{
-      _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(-1,110,self.frame.size.width-22,220)];
+      _asyncPostImageView = [[UIImageView alloc] initWithFrame: CGRectMake(self.frame.origin.x,110,self.frame.size.width,220)];
     }
         [_asyncPostImageView setContentMode:UIViewContentModeScaleAspectFit];
     _asyncPostImageView.clipsToBounds=YES;

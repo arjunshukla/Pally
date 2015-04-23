@@ -54,15 +54,6 @@
     self.tableView.tableHeaderView = ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
         
-        
-        
-        
-        
-       
-        
-        
-        
-        
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 70, 100, 100)];
        // _imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
         NSString *imageUrl;

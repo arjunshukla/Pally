@@ -93,8 +93,6 @@
 }
 
 
-
-
 #pragma mark - Push Notification methods
 
 
@@ -212,8 +210,8 @@
     NSString *str = [NSString stringWithFormat: @"Error: %@", err];
     
     
-    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:str message:nil delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
-    [alert show];
+    //UIAlertView *alert=[[UIAlertView alloc]initWithTitle:str message:nil delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+    //[alert show];
     
     
     

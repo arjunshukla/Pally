@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="YjS-Nj-AHx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="YjS-Nj-AHx">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -34,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="597BFFB5-047A-4A77-A3CC-4057D9ED1C78" id="tij-hf-zPO">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C5156794-7FD3-4B2F-863C-24D5048C72DD" id="tij-hf-zPO">
                                         <rect key="frame" x="124" y="78" width="124" height="92"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -48,7 +47,7 @@
                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="Ojy-di-MMo"/>
                                         </connections>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8DE5319E-CF7A-4FA4-BB23-B10580C61D35" id="xoz-JT-7sg">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5F718F13-1078-4E10-8399-B233E26B9B09" id="xoz-JT-7sg">
                                         <rect key="frame" x="28" y="235" width="323" height="4"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -61,7 +60,7 @@
                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="6o3-Ub-OMN"/>
                                         </connections>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8DE5319E-CF7A-4FA4-BB23-B10580C61D35" id="gEX-FK-X0r">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5F718F13-1078-4E10-8399-B233E26B9B09" id="gEX-FK-X0r">
                                         <rect key="frame" x="28" y="297" width="323" height="4"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -69,7 +68,7 @@
                                         <rect key="frame" x="29" y="375" width="316" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Login" backgroundImage="049E7504-DA33-4E84-8CBB-C59056893FF4">
+                                        <state key="normal" title="Login" backgroundImage="886F0B16-0E37-4225-A333-72F919EB0394">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -79,21 +78,21 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x9i-CG-QBl">
                                         <rect key="frame" x="154" y="328" width="187" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="F1CF748B-A830-4DC6-86BC-D20EBCDA069C">
+                                        <state key="normal" image="2F4B8F82-2427-4F47-B472-98A8573576BB">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="forgetPasswrd_action:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MzV-7e-tTD"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="884EC34E-BEFE-4061-BC95-63D6382A3E25" id="afC-aw-aYT">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="E6F55E05-A6B2-4562-912C-3FF11D466068" id="afC-aw-aYT">
                                         <rect key="frame" x="28" y="437" width="323" height="9"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PZU-5X-V0w">
                                         <rect key="frame" x="237" y="550" width="82" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="E2CB4A87-F7F7-4BDD-8CF7-2F208A16B681">
+                                        <state key="normal" image="B3E9DC81-3C21-487F-952C-592505241A86">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -142,7 +141,7 @@
                                         <rect key="frame" x="-1" y="-13" width="375" height="694"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" id="tIl-2x-cjT">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pally-logo@3x.png" id="tIl-2x-cjT">
                                         <rect key="frame" x="124" y="78" width="124" height="92"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -244,7 +243,39 @@
         </scene>
     </scenes>
     <resources>
-        <image name="049E7504-DA33-4E84-8CBB-C59056893FF4" width="308" height="54">
+        <image name="2F4B8F82-2427-4F47-B472-98A8573576BB" width="135" height="13">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
+GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
+V05TQ29sb3KAAoAMEiTAAACAA4AKWXsxMzUsIDEzfdIVChYYWk5TLm9iamVjdHOhF4AEgAnSFQoaGKIb
+HIAFgAaACRAF0yAKISIjJFdOUy5iYXNlW05TLnJlbGF0aXZlgACACIAHXxB8ZmlsZTovLy9BcHBsaWNh
+dGlvbnMvWGNvZGUuYXBwL0NvbnRlbnRzL1BsdWdJbnMvSURFSW50ZXJmYWNlQnVpbGRlcktpdC5pZGVw
+bHVnaW4vQ29udGVudHMvUmVzb3VyY2VzL0lCTWlzc2luZ0ltYWdlR2x5cGgudGlmZtInKCkqWiRjbGFz
+c25hbWVYJGNsYXNzZXNVTlNVUkyiKStYTlNPYmplY3TSJygtLldOU0FycmF5oi0r0zAxCjIzNFdOU1do
+aXRlXE5TQ29sb3JTcGFjZUQwIDAAEAOAC9InKDY3V05TQ29sb3KiNivSJyg5OldOU0ltYWdlojkrXxAP
+TlNLZXllZEFyY2hpdmVy0T0+VHJvb3SAAQAIABEAGgAjAC0AMgA3AEUASwBWAF0AZABxAHgAgACCAIQA
+iQCLAI0AlwCcAKcAqQCrAK0AsgC1ALcAuQC7AL0AxADMANgA2gDcAN4BXQFiAW0BdgF8AX8BiAGNAZUB
+mAGfAacBtAG5AbsBvQHCAcoBzQHSAdoB3QHvAfIB9wAAAAAAAAIBAAAAAAAAAD8AAAAAAAAAAAAAAAAA
+AAH5A
+</mutableData>
+        </image>
+        <image name="5F718F13-1078-4E10-8399-B233E26B9B09" width="309" height="2">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
+GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
+V05TQ29sb3KAAoAMEiTAAACAA4AKWHszMDksIDJ90hUKFhhaTlMub2JqZWN0c6EXgASACdIVChoYohsc
+gAWABoAJEAXTIAohIiMkV05TLmJhc2VbTlMucmVsYXRpdmWAAIAIgAdfEHxmaWxlOi8vL0FwcGxpY2F0
+aW9ucy9YY29kZS5hcHAvQ29udGVudHMvUGx1Z0lucy9JREVJbnRlcmZhY2VCdWlsZGVyS2l0LmlkZXBs
+dWdpbi9Db250ZW50cy9SZXNvdXJjZXMvSUJNaXNzaW5nSW1hZ2VHbHlwaC50aWZm0icoKSpaJGNsYXNz
+bmFtZVgkY2xhc3Nlc1VOU1VSTKIpK1hOU09iamVjdNInKC0uV05TQXJyYXmiLSvTMDEKMjM0V05TV2hp
+dGVcTlNDb2xvclNwYWNlRDAgMAAQA4AL0icoNjdXTlNDb2xvcqI2K9InKDk6V05TSW1hZ2WiOStfEA9O
+U0tleWVkQXJjaGl2ZXLRPT5Ucm9vdIABAAgAEQAaACMALQAyADcARQBLAFYAXQBkAHEAeACAAIIAhACJ
+AIsAjQCWAJsApgCoAKoArACxALQAtgC4ALoAvADDAMsA1wDZANsA3QFcAWEBbAF1AXsBfgGHAYwBlAGX
+AZ4BpgGzAbgBugG8AcEByQHMAdEB2QHcAe4B8QH2AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAA
+Afg
+</mutableData>
+        </image>
+        <image name="886F0B16-0E37-4225-A333-72F919EB0394" width="308" height="54">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
 GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
@@ -260,7 +291,23 @@ mAGfAacBtAG5AbsBvQHCAcoBzQHSAdoB3QHvAfIB9wAAAAAAAAIBAAAAAAAAAD8AAAAAAAAAAAAAAAAA
 AAH5A
 </mutableData>
         </image>
-        <image name="597BFFB5-047A-4A77-A3CC-4057D9ED1C78" width="150" height="115">
+        <image name="B3E9DC81-3C21-487F-952C-592505241A86" width="47" height="13">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
+GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
+V05TQ29sb3KAAoAMEiTAAACAA4AKWHs0NywgMTN90hUKFhhaTlMub2JqZWN0c6EXgASACdIVChoYohsc
+gAWABoAJEAXTIAohIiMkV05TLmJhc2VbTlMucmVsYXRpdmWAAIAIgAdfEHxmaWxlOi8vL0FwcGxpY2F0
+aW9ucy9YY29kZS5hcHAvQ29udGVudHMvUGx1Z0lucy9JREVJbnRlcmZhY2VCdWlsZGVyS2l0LmlkZXBs
+dWdpbi9Db250ZW50cy9SZXNvdXJjZXMvSUJNaXNzaW5nSW1hZ2VHbHlwaC50aWZm0icoKSpaJGNsYXNz
+bmFtZVgkY2xhc3Nlc1VOU1VSTKIpK1hOU09iamVjdNInKC0uV05TQXJyYXmiLSvTMDEKMjM0V05TV2hp
+dGVcTlNDb2xvclNwYWNlRDAgMAAQA4AL0icoNjdXTlNDb2xvcqI2K9InKDk6V05TSW1hZ2WiOStfEA9O
+U0tleWVkQXJjaGl2ZXLRPT5Ucm9vdIABAAgAEQAaACMALQAyADcARQBLAFYAXQBkAHEAeACAAIIAhACJ
+AIsAjQCWAJsApgCoAKoArACxALQAtgC4ALoAvADDAMsA1wDZANsA3QFcAWEBbAF1AXsBfgGHAYwBlAGX
+AZ4BpgGzAbgBugG8AcEByQHMAdEB2QHcAe4B8QH2AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAA
+Afg
+</mutableData>
+        </image>
+        <image name="C5156794-7FD3-4B2F-863C-24D5048C72DD" width="150" height="115">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1463,7 +1510,7 @@ ARdpAAEXdgABF3sAARd9AAEXfwABF4QAAReMAAEXjwABF5QAARecAAEXnwABF7EAARe0AAEXuQAAAAAA
 AAQBAAAAAAAAAEIAAAAAAAAAAAAAAAAAARe7A
 </mutableData>
         </image>
-        <image name="884EC34E-BEFE-4061-BC95-63D6382A3E25" width="455" height="12">
+        <image name="E6F55E05-A6B2-4562-912C-3FF11D466068" width="455" height="12">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
 GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
@@ -1479,59 +1526,11 @@ mAGfAacBtAG5AbsBvQHCAcoBzQHSAdoB3QHvAfIB9wAAAAAAAAIBAAAAAAAAAD8AAAAAAAAAAAAAAAAA
 AAH5A
 </mutableData>
         </image>
-        <image name="8DE5319E-CF7A-4FA4-BB23-B10580C61D35" width="309" height="2">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWHszMDksIDJ90hUKFhhaTlMub2JqZWN0c6EXgASACdIVChoYohsc
-gAWABoAJEAXTIAohIiMkV05TLmJhc2VbTlMucmVsYXRpdmWAAIAIgAdfEHxmaWxlOi8vL0FwcGxpY2F0
-aW9ucy9YY29kZS5hcHAvQ29udGVudHMvUGx1Z0lucy9JREVJbnRlcmZhY2VCdWlsZGVyS2l0LmlkZXBs
-dWdpbi9Db250ZW50cy9SZXNvdXJjZXMvSUJNaXNzaW5nSW1hZ2VHbHlwaC50aWZm0icoKSpaJGNsYXNz
-bmFtZVgkY2xhc3Nlc1VOU1VSTKIpK1hOU09iamVjdNInKC0uV05TQXJyYXmiLSvTMDEKMjM0V05TV2hp
-dGVcTlNDb2xvclNwYWNlRDAgMAAQA4AL0icoNjdXTlNDb2xvcqI2K9InKDk6V05TSW1hZ2WiOStfEA9O
-U0tleWVkQXJjaGl2ZXLRPT5Ucm9vdIABAAgAEQAaACMALQAyADcARQBLAFYAXQBkAHEAeACAAIIAhACJ
-AIsAjQCWAJsApgCoAKoArACxALQAtgC4ALoAvADDAMsA1wDZANsA3QFcAWEBbAF1AXsBfgGHAYwBlAGX
-AZ4BpgGzAbgBugG8AcEByQHMAdEB2QHcAe4B8QH2AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAA
-Afg
-</mutableData>
-        </image>
-        <image name="E2CB4A87-F7F7-4BDD-8CF7-2F208A16B681" width="47" height="13">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWHs0NywgMTN90hUKFhhaTlMub2JqZWN0c6EXgASACdIVChoYohsc
-gAWABoAJEAXTIAohIiMkV05TLmJhc2VbTlMucmVsYXRpdmWAAIAIgAdfEHxmaWxlOi8vL0FwcGxpY2F0
-aW9ucy9YY29kZS5hcHAvQ29udGVudHMvUGx1Z0lucy9JREVJbnRlcmZhY2VCdWlsZGVyS2l0LmlkZXBs
-dWdpbi9Db250ZW50cy9SZXNvdXJjZXMvSUJNaXNzaW5nSW1hZ2VHbHlwaC50aWZm0icoKSpaJGNsYXNz
-bmFtZVgkY2xhc3Nlc1VOU1VSTKIpK1hOU09iamVjdNInKC0uV05TQXJyYXmiLSvTMDEKMjM0V05TV2hp
-dGVcTlNDb2xvclNwYWNlRDAgMAAQA4AL0icoNjdXTlNDb2xvcqI2K9InKDk6V05TSW1hZ2WiOStfEA9O
-U0tleWVkQXJjaGl2ZXLRPT5Ucm9vdIABAAgAEQAaACMALQAyADcARQBLAFYAXQBkAHEAeACAAIIAhACJ
-AIsAjQCWAJsApgCoAKoArACxALQAtgC4ALoAvADDAMsA1wDZANsA3QFcAWEBbAF1AXsBfgGHAYwBlAGX
-AZ4BpgGzAbgBugG8AcEByQHMAdEB2QHcAe4B8QH2AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAA
-Afg
-</mutableData>
-        </image>
-        <image name="F1CF748B-A830-4DC6-86BC-D20EBCDA069C" width="135" height="13">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
-GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
-V05TQ29sb3KAAoAMEiTAAACAA4AKWXsxMzUsIDEzfdIVChYYWk5TLm9iamVjdHOhF4AEgAnSFQoaGKIb
-HIAFgAaACRAF0yAKISIjJFdOUy5iYXNlW05TLnJlbGF0aXZlgACACIAHXxB8ZmlsZTovLy9BcHBsaWNh
-dGlvbnMvWGNvZGUuYXBwL0NvbnRlbnRzL1BsdWdJbnMvSURFSW50ZXJmYWNlQnVpbGRlcktpdC5pZGVw
-bHVnaW4vQ29udGVudHMvUmVzb3VyY2VzL0lCTWlzc2luZ0ltYWdlR2x5cGgudGlmZtInKCkqWiRjbGFz
-c25hbWVYJGNsYXNzZXNVTlNVUkyiKStYTlNPYmplY3TSJygtLldOU0FycmF5oi0r0zAxCjIzNFdOU1do
-aXRlXE5TQ29sb3JTcGFjZUQwIDAAEAOAC9InKDY3V05TQ29sb3KiNivSJyg5OldOU0ltYWdlojkrXxAP
-TlNLZXllZEFyY2hpdmVy0T0+VHJvb3SAAQAIABEAGgAjAC0AMgA3AEUASwBWAF0AZABxAHgAgACCAIQA
-iQCLAI0AlwCcAKcAqQCrAK0AsgC1ALcAuQC7AL0AxADMANgA2gDcAN4BXQFiAW0BdgF8AX8BiAGNAZUB
-mAGfAacBtAG5AbsBvQHCAcoBzQHSAdoB3QHvAfIB9wAAAAAAAAIBAAAAAAAAAD8AAAAAAAAAAAAAAAAA
-AAH5A
-</mutableData>
-        </image>
         <image name="forget_password.png" width="164" height="15"/>
         <image name="login_back.png" width="375" height="667"/>
         <image name="login_button1.png" width="271" height="39"/>
-        <image name="logo.png" width="150" height="115"/>
         <image name="on_signin_with_text.png" width="108" height="15"/>
+        <image name="pally-logo@3x.png" width="478" height="352"/>
         <image name="pass_icon.png" width="39" height="33"/>
         <image name="user_icon.png" width="43" height="47"/>
     </resources>

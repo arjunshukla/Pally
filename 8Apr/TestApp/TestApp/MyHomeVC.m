@@ -50,6 +50,7 @@
 @end
 
 @implementation MyHomeVC
+@synthesize imgViewWritePost,imgViewUploadPicture;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -65,8 +66,8 @@
     
     
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 15)];
-    [button setImage:[UIImage imageNamed:@"slider_icon.png"] forState:UIControlStateNormal];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 21)];
+    [button setImage:[UIImage imageNamed:@"menu@3x.png"] forState:UIControlStateNormal];
     [button addTarget:(DEMONavigationController *)self.navigationController action:@selector(showMenu) forControlEvents:UIControlEventTouchUpInside];
     
 
@@ -295,16 +296,12 @@ homeTableViewCell *cell;
     
     if([[[self.imageNames objectAtIndex:indexPath.section]objectForKey:@"post_image"]length  ]>4)
     {
-       
-      
-        
-       
-        
         textSize = [[Singltonweblink createInstance]textsizer:textstring :CGSizeMake(tableView.frame.size.width-60, 2000)];
         
             if(textSize.height>55.0f)
             {
-                [cell.asyncPostImageView setFrame:CGRectMake(-1, textSize.height+15.0f, tableView.frame.size.width, 220)];
+                [cell.asyncPostImageView setFrame:CGRectMake(cell.frame.origin.x, 60, self.view.frame.size.width, 220)];
+//                [cell.asyncPostImageView setFrame:CGRectMake(-1, textSize.height+15.0f, tableView.frame.size.width+22, 220)];
                 [cell.noOfLikes setFrame:CGRectMake(20, textSize.height+245.0f+65.0f, 25, 14)];
                 [cell.likeButton setFrame:CGRectMake(47, textSize.height+240.0f+65.0f,26, 25)];
                 [cell.commentButton setFrame:CGRectMake(tableView.frame.size.width-70, textSize.height+240.0f+65.0f, 26,25)];
@@ -314,7 +311,8 @@ homeTableViewCell *cell;
             }
             else
             {
-                [cell.asyncPostImageView setFrame:CGRectMake(-1, 60, tableView.frame.size.width, 220)];
+//                [cell.asyncPostImageView setFrame:CGRectMake(-1, 60, tableView.frame.size.width+22, 220)];
+                [cell.asyncPostImageView setFrame:CGRectMake(cell.frame.origin.x, 60, self.view.frame.size.width, 220)];
                 [cell.noOfLikes setFrame:CGRectMake(20, 283.0f+65.0f, 25, 14)];
                 [cell.likeButton setFrame:CGRectMake(47, 278.0f+65.0f,26, 25)];
                 [cell.commentButton setFrame:CGRectMake(tableView.frame.size.width-70,278.0f+65.0f, 26,25)];
@@ -329,7 +327,7 @@ homeTableViewCell *cell;
         
         
         
-        cell.asyncPostImageView.contentMode = UIViewContentModeScaleAspectFit;
+        cell.asyncPostImageView.contentMode = UIViewContentModeScaleAspectFill;
         
         [cell.asyncPostImageView setHidden:FALSE];
         
@@ -353,7 +351,6 @@ homeTableViewCell *cell;
         
         
       textSize = [[Singltonweblink createInstance]textsizer:textstring :CGSizeMake(tableView.frame.size.width-60, 2000)];
-    
             
             if(textSize.height>55.0f)
             {
@@ -481,10 +478,10 @@ homeTableViewCell *cell;
     
     
     
-    UIImageView *tempimgline=[[UIImageView alloc]initWithFrame:CGRectMake(0, backview.frame.size.height-80, backview.frame.size.width, 2)];
-    [tempimgline setBackgroundColor:[UIColor lightGrayColor]];
-  
-    [backview addSubview:tempimgline];
+//    UIImageView *tempimgline=[[UIImageView alloc]initWithFrame:CGRectMake(0, backview.frame.size.height-80, backview.frame.size.width, 2)];
+//    [tempimgline setBackgroundColor:[UIColor lightGrayColor]];
+//  
+//    [backview addSubview:tempimgline];
     
     
 }
@@ -591,7 +588,10 @@ homeTableViewCell *cell;
     [_img_textviwtop setImage:[UIImage imageNamed:@"zig_zag_line2.png"]];
     [_tv_poststatus resignFirstResponder];
     
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@""
+    imgViewWritePost.image = [UIImage imageNamed:@"ic-edit@3x.png"];
+    imgViewUploadPicture.image = [UIImage imageNamed:@"ic-camera-select@3x.png"];
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Select Source"
                                                              delegate:self
                                                     cancelButtonTitle:@"Cancel"
                                                destructiveButtonTitle:@"Camera"
@@ -615,6 +615,8 @@ homeTableViewCell *cell;
     if(buttonIndex==2)
     {
         [_img_textviwtop setImage:[UIImage imageNamed:@"zig_zag_line.png"]];
+        imgViewWritePost.image = [UIImage imageNamed:@"ic-edit-pressed@3x.png"];
+        imgViewUploadPicture.image = [UIImage imageNamed:@"ic-camera@3x.png"];
     }
     else
     {
@@ -702,5 +704,7 @@ homeTableViewCell *cell;
     
     [_img_textviwtop setImage:[UIImage imageNamed:@"zig_zag_line.png"]];
     [_tv_poststatus becomeFirstResponder];
+    imgViewWritePost.image = [UIImage imageNamed:@"ic-edit-pressed@3x.png"];
+    imgViewUploadPicture.image = [UIImage imageNamed:@"ic-camera@3x.png"];
 }
 @end

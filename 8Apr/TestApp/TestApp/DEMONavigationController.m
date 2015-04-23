@@ -24,6 +24,7 @@
     [self.view addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
     
     [self.navigationBar setBarTintColor:[UIColor  colorWithRed:0.1804 green:0.6510 blue:0.50569 alpha:0.9f]];
+    [self.navigationBar setBarTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"#20bfa3-Teal.png"]]];
     
     //[self.navigationBar setTintColor:[UIColor  colorWithRed:0.1804 green:0.6510 blue:0.50569 alpha:0.9f]];
 }

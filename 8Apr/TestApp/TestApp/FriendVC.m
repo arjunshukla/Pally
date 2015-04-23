@@ -48,8 +48,8 @@
     
     
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 15)];
-    [button setImage:[UIImage imageNamed:@"slider_icon.png"] forState:UIControlStateNormal];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 21)];
+    [button setImage:[UIImage imageNamed:@"menu@3x.png"] forState:UIControlStateNormal];
     [button addTarget:(DEMONavigationController *)self.navigationController action:@selector(showMenu) forControlEvents:UIControlEventTouchUpInside];
     
     
@@ -258,8 +258,8 @@
         
         
     }
-    [cell setFrame:CGRectMake(0, 0, [[UIScreen mainScreen]bounds].size.width, cell.frame.size.height)];
-    
+//    [cell setFrame:CGRectMake(0, 0, [[UIScreen mainScreen]bounds].size.width, cell.frame.size.height)];
+    [cell setFrame:CGRectMake(0, 0, tableView.frame.size.width, cell.frame.size.height)];
     [cell.imVW_friend.layer setCornerRadius:cell.imVW_friend.frame.size.width/2];
     [cell.imVW_friend.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     [cell.imVW_friend.layer setBorderWidth:0.0f];
@@ -298,7 +298,7 @@
     [cell.lbl_detail setText:[[[[chckrespoArry objectAtIndex:indexPath.row] objectForKey:@"age"] stringByAppendingString:@" , "] stringByAppendingString:[[chckrespoArry objectAtIndex:indexPath.row ]objectForKey:@"country"]]];
     
    // NSLog(@"%f",tableView.frame.size.width);
-    [cell.btn_friend setFrame:CGRectMake(tableView.frame.size.width-10, cell.btn_friend.frame.origin.y, cell.btn_friend.frame.size.width, cell.btn_friend.frame.size.height)];
+    [cell.btn_friend setFrame:CGRectMake(tableView.frame.size.width, cell.btn_friend.frame.origin.y, cell.btn_friend.frame.size.width, cell.btn_friend.frame.size.height)];
     
     if([status isEqualToString:@"Friends"])
     {
@@ -317,15 +317,6 @@
         [cell.btn_friend setTag:[[[chckrespoArry objectAtIndex:indexPath.row ] objectForKey:@"id" ] intValue]];
         [cell.btn_friend addTarget:self action:@selector(btnFriendunblock_action:) forControlEvents:UIControlEventTouchDown];
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     return cell;
 }
