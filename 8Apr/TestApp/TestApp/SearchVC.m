@@ -338,7 +338,7 @@
     
     [_view_main setFrame: CGRectMake(0, 0, _view_main.frame.size.width, _view_main.frame.size.height)];
      arry_tblmain=[self countryNames];
-     string_category=@"Country";
+     string_category=@"Choose Country:";
     [_tblmain reloadData];
 
 
@@ -349,7 +349,7 @@
     
     [_view_main setFrame: CGRectMake(0, 0, _view_main.frame.size.width, _view_main.frame.size.height)];
     arry_tblmain=languge_arry;
-    string_category=@"Language";
+    string_category=@"Choose Languages:";
     [_tblmain reloadData];
 
 
@@ -359,7 +359,7 @@
     
     [_view_main setFrame: CGRectMake(0, 0, _view_main.frame.size.width, _view_main.frame.size.height)];
     arry_tblmain=city_arry;
-     string_category=@"City";
+     string_category=@"Select City:";
     [_tblmain reloadData];
 //    [self Viewpicker_bacvkground];
 //    [lbl_info setText:@"Select your City..."];
@@ -538,9 +538,10 @@ NSMutableArray *ary;
     UIView *footer=[[UIView alloc] initWithFrame:CGRectMake(0,0,tableView.frame.size.width,36)];
     footer.backgroundColor=[UIColor whiteColor];
     
-    UILabel *lbltit=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 90, 30)];
+    UILabel *lbltit=[[UILabel alloc]initWithFrame:CGRectMake(10, 7, 120, 30)];
     [lbltit setText:string_category];
-    [lbltit setFont: [UIFont boldSystemFontOfSize:16.0f]];
+    [lbltit setFont: [UIFont systemFontOfSize:13.0f]];
+    [lbltit setTextColor:[UIColor darkGrayColor]];
     [footer addSubview:lbltit];
     
     
@@ -583,11 +584,11 @@ NSMutableArray *ary;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    if([string_category isEqualToString:@"Country"])
+    if([string_category isEqualToString:@"Choose Country:"])
     {
         return @"Country";
     }
-    else if ([string_category isEqualToString:@"Country"])
+    else if ([string_category isEqualToString:@"Choose Country:"])
     {
         return _btn_country.titleLabel.text;
     }
@@ -620,7 +621,7 @@ NSMutableArray *ary;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         [cell.textLabel setFont:[UIFont boldSystemFontOfSize:14.0f]];
-        
+        [cell.textLabel setTextColor:[UIColor darkGrayColor]];
         
         
         
