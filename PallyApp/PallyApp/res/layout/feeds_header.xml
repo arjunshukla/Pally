@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feeds_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="10dp" >
+
+    <com.pally.app.customview.RoundedImageView
+        android:id="@+id/profile_thumb"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_thumb" />
+
+    <LinearLayout
+        android:id="@+id/activity_info_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emma Watson"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/profile_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:20 PM"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navigation_bar_background">#26303c</color>
+    <color name="navigation_bar_seperator">#58595b</color>
+    <color name="navigation_bar_text">#FFFFFF</color>
+    <color name="app_background">#e5e5e5</color>
+    <color name="forget_password_background">#26303c</color>
+    <color name="status_bar_color">#20bfa3</color>
+    <color name="profile_header_background">#20bfa3</color>
+    <color name="toolbar_background">#20bfa3</color>
+    <color name="app_background_grey">#e5e5e5</color>
+</resources>
