@@ -17,10 +17,11 @@ public class AnimatorBuilder {
     public AnimatorBuilder() {
         mListAnimatorBundles = new ArrayList<>(2);
     }
-
+        
     public static AnimatorBuilder create() {
         return new AnimatorBuilder();
     }
+    
 
     public AnimatorBuilder applyScale(final View viewToScale, final Rect finalRect) {
 

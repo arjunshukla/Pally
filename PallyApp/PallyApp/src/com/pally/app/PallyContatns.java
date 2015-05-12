@@ -13,6 +13,7 @@ public class PallyContatns {
 	public static String FRIENDS_FRAGMENT = "FRIENDS_FRAGMENT";
 	public static String CHAT_FRAGMENT = "CHAT_FRAGMENT";
 	public static String SEARCH_FRAGMENT = "SEARCH_FRAGMENT";
+	public static String SEARCH_RESULT_FRAGMENT = "SEARCH_RESULT_FRAGMENT";
 	public static String NOTIFICATION_FRAGMENT = "NOTIFICATION_FRAGMENT";
 	public static String SETTINGS_FRAGMENT = "SETTINGS_FRAGMENT";
 	

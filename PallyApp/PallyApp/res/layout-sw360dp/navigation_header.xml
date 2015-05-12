@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_background"
+    android:paddingTop="20dp" >
+
+    <com.pally.app.customview.RoundedImageView
+        android:id="@+id/navigation_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/profile_thumb" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/navigation_profile_image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/navigation_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/navigation_bar_text"
+            android:text="Emma Watson"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/navigation_age_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25, English"
+            android:textColor="@color/navigation_bar_text"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/navigation_profile_image"
+        android:layout_marginTop="20dp"
+        android:background="@color/navigation_bar_seperator" />
+
+</RelativeLayout>

@@ -1,8 +1,5 @@
 package com.pally.app;
 
-import com.pally.app.R;
-import com.pally.app.R.layout;
-
 import android.app.Activity;
 import android.os.Bundle;
 

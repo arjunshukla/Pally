@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_feed_view_container"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/update_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="Update Status"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/upload_photos_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:text="Upload Photos"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ViewSwitcher
+        android:id="@+id/status_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_status_text"
+        android:minHeight="60dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <EditText
+                android:id="@+id/user_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:hint="Click here to update status"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="60dp" >
+        </RelativeLayout>
+    </ViewSwitcher>
+
+    <View
+        android:id="@+id/feeds_seperator_second"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/status_container"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_light" />
+
+    <Button
+        android:id="@+id/post_feeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/feeds_seperator_second"
+        android:layout_margin="10dp"
+        android:text="POST" />
+
+</RelativeLayout>
